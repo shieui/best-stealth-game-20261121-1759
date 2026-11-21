@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
+<title>Mothlight Heist — a stealth game</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #0b0a12; color: #e8e2d0;
+    font-family: Georgia, 'Times New Roman', serif; }
+  body { display: flex; flex-direction: column; align-items: center; }
+  h1 { font-size: 20px; letter-spacing: 3px; margin: 14px 0 4px; color: #f2c94c; font-weight: normal; }
+  .sub { font-size: 13px; color: #9a93a8; margin: 0 0 10px; font-style: italic; }
+  canvas { background: #14121c; border: 1px solid #3a3450; box-shadow: 0 0 40px rgba(0,0,0,.7); }
+  .help { font-size: 13px; color: #b9b2c6; margin: 10px 0 20px; line-height: 1.6; text-align: center; }
+  .help b { color: #f2c94c; font-weight: normal; }
+</style>
+</head>
+<body>
+<h1>MOTHLIGHT HEIST</h1>
+<p class="sub">Slip through the Gallery of Whispers. Take the Moon Pearl. Leave unseen.</p>
+<canvas id="game" width="960" height="640"></canvas>
+<p class="help">
+  <b>WASD / arrows</b> move &nbsp;·&nbsp; <b>Shift</b> sneak (slow, quiet) &nbsp;·&nbsp;
+  <b>Click</b> throw a pebble to distract a guard &nbsp;·&nbsp; <b>M</b> mute &nbsp;·&nbsp; <b>Enter</b> start / continue<br>
+  Stay out of the guards' lantern-lit vision cones. Crates block their sight; ferns hide you.
+  Reach the green door — on the last level, take the Moon Pearl first.
+</p>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
